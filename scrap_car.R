@@ -1,9 +1,7 @@
 message('Loading Packages')
-library(devtools)
 library(rvest)
 library(tidyverse)
 library(mongolite)
-devtools::install_github("r-lib/conflicted")
 
 
 url_audi<-"https://mobilbaru.mobil123.com/search/audi"

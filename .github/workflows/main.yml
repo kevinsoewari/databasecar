@@ -20,10 +20,10 @@ jobs:
     - name: Install packages
       run: |
         install.packages("devtools")
-        devtools::install_github("r-lib/conflicted")
         install.packages("rvest", dependencies = TRUE)
         install.packages("tidyverse", dependencies = TRUE)
         install.packages("mongolite")
+        devtools::install_github("r-lib/conflicted")
         
       shell: Rscript {0} 
     - name: Scrape Data Mobil

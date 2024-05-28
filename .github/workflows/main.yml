@@ -22,9 +22,6 @@ jobs:
         install.packages("rvest", dependencies = TRUE)
         install.packages("tidyverse", dependencies = TRUE)
         install.packages("mongolite")
-        install.packages("RSelenium")
-        install.packages("netstat")
-        install.packages("httr")
         install.packages("stringr")
         
       shell: Rscript {0} 

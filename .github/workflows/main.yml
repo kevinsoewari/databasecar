@@ -19,11 +19,9 @@ jobs:
     - uses: r-lib/actions/setup-r@v2   
     - name: Install packages
       run: |
-        install.packages("devtools")
         install.packages("rvest", dependencies = TRUE)
         install.packages("tidyverse", dependencies = TRUE)
         install.packages("mongolite")
-        devtools::install_github("r-lib/conflicted")
         
       shell: Rscript {0} 
     - name: Scrape Data Mobil

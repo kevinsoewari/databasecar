@@ -178,9 +178,9 @@ data_mobil <- mobil[pilih,]
 #MONGODB
 message('Input Data to MongoDB Atlas')
 atlas_conn <- mongo(
-  collection = Sys.getenv("ATLAS_COLLECTION"),
-  db         = Sys.getenv("ATLAS_DB"),
-  url        = Sys.getenv("ATLAS_URL")
+  collection = Sys.getenv("mobil"),
+  db         = Sys.getenv("databasecars"),
+  url        = Sys.getenv("mongodb+srv://kevinalifviansyah:030900@mydatabase.m9nhqtm.mongodb.net/?retryWrites=true&w=majority&appName=mydatabase")
 )
 
 atlas_conn$insert(mobil)
